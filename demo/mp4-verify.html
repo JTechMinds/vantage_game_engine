@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M-P4 GPU-binding readout verify</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0a0d12; overflow: hidden; }
+    #terrain-canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; }
+  </style>
+</head>
+<body>
+  <!-- M-P4 devOnly GPU-binding readout verification harness. Loads the freshly
+       bundled demo; open with ?debug=1 to surface the on-screen GPU badge. The
+       console line [M-P4] bound GPU: ... and window.__gpuRenderer are always set. -->
+  <script src="./terrain-demo.bundle.js"></script>
+</body>
+</html>

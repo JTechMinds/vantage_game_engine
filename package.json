@@ -1,0 +1,25 @@
+{
+  "name": "@game-engine/layer1-terrain",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.4.1"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/engine/layer1/terrain/index.ts",
+    "./api": "./src/engine/layer1/terrain/index.ts"
+  },
+  "scripts": {
+    "test": "node --test tests/layer1/terrain-core/*.test.ts tests/layer1/terrain-ui/*.test.ts tests/layer1/renderer/*.test.ts",
+    "build:demo": "esbuild demo/terrain-demo.ts --bundle --format=iife --platform=browser --outfile=demo/terrain-demo.bundle.js",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "jsdom": "^29.1.1"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}

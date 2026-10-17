@@ -1,0 +1,30 @@
+node_modules/
+.npm/
+.local/
+*.log
+
+# internal-only: team docs (plans, specs, requirements, verdicts, findings)
+docs/
+
+# internal-only: QA evidence (screenshots, probe scripts, verification notes)
+evidence/
+
+# internal-only: project knowledge notes
+project_knowledge.md
+
+# internal-only: Poly Haven fetch probes
+.ph-probe/
+
+# local asset cache (fetched textures/sky; rebuild with tools fetch scripts)
+assets/
+
+# generated demo bundles (rebuild with: npm run build:demo)
+demo/*.bundle.js
+
+# local tooling caches
+.cache/
+.config/
+
+# local node pinning / lockfile (keep on disk, not in public repo)
+.nvmrc
+package-lock.json
